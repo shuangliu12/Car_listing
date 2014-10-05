@@ -7,7 +7,7 @@ feature "User can create new cars" do
     visit new_car_path(car)
 
     fill_in('Color', with: car.color)
-    fill_in('Year', with:car.year)
+    fill_in('Year', with: car.year)
     fill_in('Mileage', with: car.mileage)
     select('Ford')
 
@@ -21,7 +21,7 @@ feature "User can create new cars" do
     visit new_car_path(car)
 
     fill_in('Color', with: car.color)
-    fill_in('Year', with:car.year)
+    fill_in('Year', with: car.year)
     select('Ford')
 
     click_on 'Submit Car'
