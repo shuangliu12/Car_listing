@@ -1,0 +1,9 @@
+<h1>List of All Manufacturers</h1>
+
+<ul>
+<% @manufacturers.each do |m| %>
+  <li><%= m.name%>, <%= m.country %></li>
+<% end %>
+</ul>
+
+<%= link_to "create a new manufacturer", new_manufacturer_path(@manufacturer)%>
