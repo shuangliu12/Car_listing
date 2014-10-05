@@ -10,6 +10,7 @@ class CarsController < ApplicationController
 
   def create
     @car = Car.new(car_params)
+    @manufacturers = Manufacturer.all
     if @car.save
       redirect_to cars_path
       flash[:success] = "Your car has been saved successfully"

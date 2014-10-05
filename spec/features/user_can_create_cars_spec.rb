@@ -11,7 +11,7 @@ feature "User can create new cars" do
     fill_in('Mileage', with: car.mileage)
     select('Ford')
 
-    click 'Submit Car'
+    click_on 'Submit Car'
     expect(page).to have_content("All the Cars")
   end
 
